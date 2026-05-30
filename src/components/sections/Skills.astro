@@ -37,23 +37,51 @@ const SKILLS_ICONS: Record<string, any> = {
 ---
 
 <Section title="Habilidades">
-  <ul>
+  <div class="skills-container">
     {
-      skills.map(({ name }) => {
-        const iconName = name === "Next.js" ? "Next" : name
-        const Icon = SKILLS_ICONS[iconName]
+      skills.map(({ name, keywords }) => (
+        <div class="category">
+          <h3>{name}</h3>
+          <ul>
+            {keywords.map((keyword) => {
+              // Buscar de manera dinámica si el keyword contiene el nombre de algún icono (ej. "Node.js" contiene "Node")
+              const matchedIconKey = Object.keys(SKILLS_ICONS).find(key => 
+                keyword.toLowerCase().includes(key.toLowerCase())
+              )
+              const Icon = matchedIconKey ? SKILLS_ICONS[matchedIconKey] : null
 
-        return (
-          <li>
-            {Icon && <Icon />} <span>{name}</span>
-          </li>
-        )
-      })
+              return (
+                <li>
+                  {Icon && <span class="skill-icon"><Icon /></span>}
+                  <span>{keyword}</span>
+                </li>
+              )
+            })}
+          </ul>
+        </div>
+      ))
     }
-  </ul>
+  </div>
 </Section>
 
 <style>
+  .skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .category h3 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 4px;
+  }
+
   ul {
     display: inline-flex;
     gap: 8px;
@@ -62,13 +90,49 @@ const SKILLS_ICONS: Record<string, any> = {
 
   li {
     align-items: center;
-    background: #eee;
+    background: #f9fafb;
     border-radius: 6px;
-    color: black;
+    color: #374151;
     display: flex;
     font-size: 0.8rem;
     font-weight: 500;
-    gap: 4px;
-    padding: 0.2rem 0.6rem;
+    gap: 6px;
+    padding: 0.3rem 0.7rem;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  li:hover {
+    background: #f3f4f6;
+    color: #111827;
+    border-color: #d1d5db;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .skill-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+  }
+
+  @media print {
+    .skills-container {
+      gap: 1rem;
+    }
+    
+    li {
+      background: transparent;
+      border: 1px solid #ddd;
+      color: #333;
+      padding: 0.2rem 0.5rem;
+    }
+    
+    li:hover {
+      transform: none;
+      box-shadow: none;
+    }
   }
 </style>

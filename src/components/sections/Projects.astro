@@ -1,42 +1,77 @@
 ---
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
+import fs from "fs"
+import path from "path"
 
 import { projects } from "@cv"
+
+// Copy mockup images automatically during Astro server/build execution
+const sourceDir = "C:\\Users\\Octavio\\.gemini\\antigravity\\brain\\d33ad23a-b851-42b6-adce-aba15139e0e7"
+const targetDir = path.join(process.cwd(), "public", "images")
+
+const imagesToCopy = [
+  { src: "inventory_mockup_1780018266347.png", dest: "inventory_mockup.png" },
+  { src: "flyreserve_mockup_1780018686521.png", dest: "flyreserve_mockup.png" },
+  { src: "certiwebs_mockup_1780018759480.png", dest: "certiwebs_mockup.png" }
+]
+
+try {
+  if (!fs.existsSync(targetDir)) {
+    fs.mkdirSync(targetDir, { recursive: true })
+  }
+  
+  imagesToCopy.forEach((img) => {
+    const srcPath = path.join(sourceDir, img.src)
+    const destPath = path.join(targetDir, img.dest)
+    if (fs.existsSync(srcPath)) {
+      fs.copyFileSync(srcPath, destPath)
+    }
+  })
+} catch (e) {
+  console.error("Error auto-copying mockup images in Projects.astro frontmatter:", e)
+}
 ---
 
 <Section title="Proyectos">
   <ul>
     {
       projects.map(
-        ({ url, description, highlights, name, isActive, github }) => {
+        ({ url, description, highlights, name, isActive, github, image }) => {
           return (
             <li>
               <article>
-                <header>
-                  <h3>
-                    <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
-                      {name}
-                    </a>
-                    {isActive && <span>•</span>}
-                    {github && (
-                      <a
-                        class="github-code-link"
-                        href={github}
-                        target="_blank"
-                        title={`Ver código fuente del proyecto ${name}`}
-                      >
-                        <GitHub />
+                {image && (
+                  <div class="image-wrapper">
+                    <img src={image} alt={`Visualización de ${name}`} loading="lazy" />
+                  </div>
+                )}
+                <div class="project-info">
+                  <header>
+                    <h3>
+                      <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
+                        {name}
                       </a>
-                    )}
-                  </h3>
-                  <p>{description}</p>
-                </header>
-                <footer>
-                  {highlights.map((highlight) => {
-                    return <span>{highlight}</span>
-                  })}
-                </footer>
+                      {isActive && <span class="active-dot">•</span>}
+                      {github && (
+                        <a
+                          class="github-code-link"
+                          href={github}
+                          target="_blank"
+                          title={`Ver código fuente del proyecto ${name}`}
+                        >
+                          <GitHub />
+                        </a>
+                      )}
+                    </h3>
+                    <p>{description}</p>
+                  </header>
+                  <footer>
+                    {highlights.map((highlight) => {
+                      return <span>{highlight}</span>
+                    })}
+                  </footer>
+                </div>
               </article>
             </li>
           )
@@ -49,69 +84,126 @@ import { projects } from "@cv"
 <style>
   ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
     margin-inline: -16px;
   }
 
   article {
-    border-radius: 8px;
-    border: 1px solid #f2f2f2;
-    gap: 16px;
+    border-radius: 12px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: #ffffff;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03), 0 2px 4px -1px rgba(0, 0, 0, 0.02);
+  }
+
+  article:hover {
+    border-color: #cbd5e1;
+    box-shadow: 0 12px 24px -4px rgba(0, 0, 0, 0.06), 0 4px 12px -2px rgba(0, 0, 0, 0.04);
+    transform: translateY(-4px);
+  }
+
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    background-color: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  article:hover .image-wrapper img {
+    transform: scale(1.05);
+  }
+
+  .project-info {
     display: flex;
     flex-direction: column;
     padding: 16px;
-    height: 100%;
+    flex-grow: 1;
+    gap: 12px;
   }
 
-  article header {
-    flex: 1;
+  header {
+    flex-grow: 1;
   }
 
-  article h3 {
-    margin-bottom: 4px;
+  h3 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
   }
 
-  article a {
-    color: #111;
+  h3 a {
+    color: #0f172a;
+    text-decoration: none;
+    transition: color 0.2s;
   }
 
-  article a:hover {
+  h3 a:hover {
+    color: #2563eb;
     text-decoration: underline;
   }
 
-  article p {
-    font-size: 0.75rem;
-    line-height: 1.2rem;
-    margin-bottom: 4px;
+  .active-dot {
+    color: rgb(34, 197, 94);
+    font-size: 1.25rem;
+    animation: flicker 2s ease-in-out infinite;
   }
 
-  article h3 span {
-    color: rgb(0, 188, 47);
-    animation-name: flicker;
-    animation-duration: 3s;
-    animation-timing-function: ease-in;
-    animation-iteration-count: infinite;
+  p {
+    font-size: 0.8rem;
+    line-height: 1.35rem;
+    color: #475569;
+    margin-bottom: 8px;
   }
 
   footer {
     display: flex;
     flex-wrap: wrap;
-    gap: 4px;
-    font-size: 0.6rem;
+    gap: 6px;
+    margin-top: auto;
   }
 
   footer span {
     border-radius: 6px;
-    background: #eee;
-    color: #444;
-    font-size: 0.6rem;
+    background: #f1f5f9;
+    color: #334155;
+    font-size: 0.65rem;
     font-weight: 500;
-    padding: 0.2rem 0.6rem;
+    padding: 0.25rem 0.6rem;
+    transition: all 0.2s;
+  }
+
+  footer span:hover {
+    background: #e2e8f0;
+    color: #0f172a;
   }
 
   .github-code-link {
-    margin-left: 5px;
+    display: inline-flex;
+    align-items: center;
+    color: #64748b;
+    transition: color 0.2s;
+    margin-left: 4px;
+  }
+
+  .github-code-link:hover {
+    color: #0f172a;
   }
 
   @keyframes flicker {
@@ -119,28 +211,63 @@ import { projects } from "@cv"
       opacity: 1;
     }
     50% {
-      opacity: 0.25;
+      opacity: 0.3;
     }
     100% {
       opacity: 1;
     }
   }
 
-  @media (width <= 700px) {
+  @media (max-width: 700px) {
     ul {
       margin-inline: 0px;
+      grid-template-columns: 1fr;
     }
 
     article {
-      border: none;
-      box-shadow: 0 1px 1px #f2f2f2;
-      padding: 0 0 16px 0;
+      border: 1px solid #e2e8f0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
     }
   }
 
   @media print {
-    article h3 span {
-      animation-name: none;
+    ul {
+      grid-template-columns: 1fr !important;
+      gap: 1rem !important;
+    }
+
+    .image-wrapper {
+      display: none !important;
+    }
+
+    article {
+      border: none !important;
+      box-shadow: none !important;
+      padding: 0 0 8px 0 !important;
+      page-break-inside: avoid;
+    }
+
+    .project-info {
+      padding: 0 !important;
+    }
+
+    h3 {
+      font-size: 0.95rem !important;
+    }
+
+    p {
+      font-size: 0.75rem !important;
+      line-height: 1.1rem !important;
+    }
+
+    footer span {
+      background: none !important;
+      border: 1px solid #e2e8f0 !important;
+      color: #334155 !important;
+    }
+
+    .active-dot {
+      animation: none !important;
     }
   }
 </style>

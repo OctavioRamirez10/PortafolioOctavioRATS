@@ -1,275 +1,236 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full Stack Developer con más de 15 años de experiencia & Creador de Contenido de Programación",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 años de experiencia como Desarrollador Web. Actualmente soy Creador de Contenido y Divulgador sobre Programación. Vivo en Barcelona, España. He trabajado en diferentes entornos: desde acelerar el desarrollo de start-ups hasta liderando equipos de empresas multinacionales.",
+    "name": "Octavio Ramirez",
+    "label": "Técnico en Soporte IT & Desarrollador Full Stack Junior",
+    "image": "/me.jpg",
+    "email": "octaarami@gmail.com",
+    "phone": "+54 342 432-4206",
+    "url": "https://github.com/OctavioRamirez10",
+    "summary": "Técnico en Desarrollo de Software e Informática con más de 2 años de experiencia liderando soporte técnico Tier-1 y Tier-2 en entornos gubernamentales de alta demanda. Especializado en optimizar el tiempo de respuesta, administración de redes LAN y mantenimiento avanzado de infraestructuras multi-usuario en Windows y Linux (Ubuntu/Debian). Actualmente cursando la Tecnicatura Superior en Desarrollo de Software (ICOP) y la Tecnicatura en Informática Aplicada a Sitios Web y Diseño Multimedial (UNL). Combino una sólida base operativa IT con metodologías modernas de desarrollo full-stack (Node.js, Express, PostgreSQL, REST APIs, Python) para crear herramientas digitales seguras, ágiles e interactivas. Altamente proactivo, con un fuerte enfoque analítico para la resolución de incidencias complejas y adaptabilidad al trabajo remoto e híbrido.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "España"
+      "postalCode": "3000",
+      "city": "Santa Fe",
+      "countryCode": "AR",
+      "region": "Santa Fe, Argentina"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "octavio-ramirez",
+        "url": "https://linkedin.com/in/octavio-ramirez-425053400"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "OctavioRamirez10",
+        "url": "https://github.com/OctavioRamirez10"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Divulgador sobre Programación Web",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "Casa de Gobierno — Santa Fe",
+      "position": "Técnico en Soporte IT — Área Informática",
+      "url": "",
+      "startDate": "2023-01-01",
       "endDate": null,
-      "summary": "Streamer de programación más visto en Español en Twitch. +1 millón de seguidores entre todas mis redes sociales. Reconocido por Google, Microsoft y GitHub por mi impacto en la comunidad de desarrolladores.",
+      "summary": "Lidero el soporte técnico integral y la administración básica de la infraestructura IT local del organismo público, brindando soporte técnico Tier-1 y Tier-2 a más de 100 usuarios gubernamentales y asegurando alta disponibilidad de los servicios y sistemas estatales.",
       "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "Lideré una convergencia técnica entre diferentes productos y migramos una arquitectura monolítica a otra más flexible y optimizada. Fomenté buenas prácticas y mejoras en la cultura de rendimiento, además de la entrega rápida de valor a los usuarios.",
-      "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "Desarrollé una plataforma de noticias geolocalizadas y una API para consumir la información. Escalé los servicios para soportar la carga de más de cientos de miles de peticiones al día. Recorté los tiempos de entrega y despliegues a producción a la mitad. Colaboré con Mozilla y Telefónica para desarrollar la primera app para televisores con FirefoxOS.",
-      "highlights": [
-        "Started the company"
+        "Reduje en un 30% el tiempo promedio de resolución de incidentes (MTTR) mediante la estandarización de protocolos de diagnóstico (troubleshooting) y el seguimiento riguroso de flujos de trabajo de tickets.",
+        "Garantizo un uptime superior al 99% a nivel departamental instalando, configurando y actualizando sistemas operativos Windows 10/11 y distribuciones Linux (Ubuntu/Debian) adaptadas al entorno de trabajo.",
+        "Diagnostico y soluciono exitosamente más de 50 incidencias mensuales de hardware y software (estaciones de trabajo, impresoras, servidores de red locales), aplicando mantenimientos correctivos y preventivos críticos que disminuyeron fallas recurrentes en un 25%.",
+        "Diseñé e implementé la reestructuración y ampliación del cableado estructurado para más de 80 nodos de red LAN locales, mejorando significativamente la confiabilidad de la red física y bajando caídas de conectividad en un 40%.",
+        "Administro credenciales de usuarios, software institucional de uso diario y configuraciones de acceso de red local según las directivas de seguridad digital interna de la provincia.",
+        "Gestiono de manera eficiente el inventario total de activos tecnológicos de la oficina, minimizando costos operativos de recambio de componentes mediante mantenimiento preventivo estructurado."
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Ingeniero de Software",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Instituto ICOP",
+      "url": "https://icop.edu.ar",
+      "area": "Tecnicatura Superior en Desarrollo de Software",
+      "studyType": "Carrera Superior Terciaria (En Curso)",
+      "startDate": "2023-02-01",
+      "endDate": null,
+      "score": "",
+      "courses": [
+        "Desarrollo de Software Orientado a Objetos",
+        "Estructura de Datos e Algoritmos",
+        "Bases de Datos Relacionales y SQL Avanzado",
+        "Ingeniería de Software y Calidad"
+      ]
+    },
+    {
+      "institution": "Universidad Nacional del Litoral (UNL)",
+      "url": "https://www.unl.edu.ar",
+      "area": "Tecnicatura en Informática Aplicada a Sitios Web y Diseño Multimedial",
+      "studyType": "Carrera Universitaria (En Curso)",
+      "startDate": "2022-01-01",
+      "endDate": null,
+      "score": "",
+      "courses": [
+        "Desarrollo Web Responsive y Estilos CSS3 Avanzados",
+        "Programación Frontend con JavaScript moderno",
+        "Diseño de Experiencia de Usuario (UX/UI)",
+        "Sistemas de Información y Bases de Datos"
+      ]
+    },
+    {
+      "institution": "Escuela San Roque 3015",
+      "url": "",
+      "area": "Bachillerato Secundario",
+      "studyType": "Secundario (Completado)",
+      "startDate": "2015-03-01",
+      "endDate": "2020-12-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Desarrollo Web Full Stack Profesional",
+      "date": "2024-01-01",
+      "issuer": "ACADEMIX",
+      "url": ""
+    },
+    {
+      "name": "Reparación y Mantenimiento de PC",
+      "date": "2024-12-01",
+      "issuer": "Instituto ICOP",
+      "url": ""
+    },
+    {
+      "name": "Reparación de Celulares y Dispositivos Móviles",
+      "date": "2024-02-01",
+      "issuer": "Curso Independiente",
+      "url": ""
+    },
+    {
+      "name": "Diseñador Gráfico Digital",
+      "date": "2023-12-31",
+      "issuer": "Glowing",
+      "url": ""
+    }
+  ],
+  "publications": [],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
+      "name": "Soporte IT & Infraestructura",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "CSS Framework", "Diseño Responsive"
+        "Sistemas Operativos Windows 10/11 & Windows Server",
+        "Administración Linux SysAdmin (Ubuntu/Debian)",
+        "Configuración de Redes TCP/IP & LAN",
+        "Instalación de Cableado Estructurado",
+        "Troubleshooting y Diagnóstico de Hardware",
+        "Mantenimiento Correctivo y Preventivo",
+        "Escritorio Remoto (RDP, VNC, AnyDesk)",
+        "Gestión de Active Directory y Cuentas de Usuario",
+        "Administración de Microsoft Office 365 & LibreOffice",
+        "Flujos de Trabajo de Tickets y Gestión de SLAs"
       ]
     },
     {
-      "name": "TypeScript",
+      "name": "Desarrollo de Software",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Frontend", "Backend", "JavaScript Superset"
+        "HTML5 & Estructura Web Semántica",
+        "CSS3 & Animaciones Modernas",
+        "JavaScript ES6+ Avanzado",
+        "Node.js & Express.js para Servicios de Servidor",
+        "Construcción y Consumo de REST APIs",
+        "Bases de Datos Relacionales PostgreSQL & MySQL",
+        "Lenguajes PHP & Python",
+        "Control de Versiones Git & Metodología GitHub Flow",
+        "Diseño Responsivo Web (Mobile First)",
+        "Principios UX/UI y Accesibilidad Web",
+        "Metodologías Ágiles (Agile/Scrum)",
+        "Ciclo de Vida de Desarrollo de Software (SDLC)"
       ]
     },
     {
-      "name": "Node",
+      "name": "Diseño & Multimedia",
       "level": "Avanzado",
       "keywords": [
-        "Desarrollo Web", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Avanzado",
-      "keywords": [
-        "Bases de Datos", "SQL", "Almacenamiento de Datos", "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Avanzado",
-      "keywords": [
-        "Control de Versiones", "Colaboración", "Código Fuente", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Avanzado",
-      "keywords": [
-        "Desarrollo Web", "Frontend", "JavaScript Library", "UI"
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Adobe After Effects",
+        "Diseño de Marca & Identidad Visual",
+        "Creación de Contenido de Marca Multimedia"
       ]
     }
   ],
   "languages": [
     {
-      "language": "Spanish",
-      "fluency": "Native speaker"
+      "language": "Español",
+      "fluency": "Nativo"
     },
     {
-      "language": "English",
-      "fluency": "Advanced"
+      "language": "Inglés",
+      "fluency": "Intermedio"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [],
+  "references": [],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "Sistema de Gestión de Inventario",
       "isActive": true,
-      "description": "Historia interactiva con retos de programación para viajar a Marte",
+      "image": "/images/inventory_mockup.png",
+      "description": "Plataforma web full stack premium diseñada para automatizar y controlar el stock en tiempo real. Permite gestionar entradas/salidas de productos, catálogo de proveedores y auditorías de inventario.",
       "highlights": [
-        "Elige tu propia aventura",
-        "En desarrollo"
+        "Desarrollé una API REST de alto rendimiento en Node.js y Express.js, implementando endpoints seguros para todas las operaciones CRUD fundamentales.",
+        "Modelé y optimicé la base de datos relacional PostgreSQL con restricciones de integridad referencial avanzadas, garantizando consistencia total en operaciones transaccionales de stock.",
+        "Diseñé e implementé una interfaz de usuario limpia, responsiva e interactiva basada en HTML5, CSS3 vanilla y manipulación dinámica del DOM mediante Vanilla JavaScript.",
+        "Apliqué el flujo de trabajo colaborativo Git Workflow (ramas específicas para features, resolución estructurada de conflictos, control de commits) siguiendo las mejores prácticas de la industria."
       ],
-      "url": "https://mars.codes"
+      "url": "https://github.com/OctavioRamirez10/Backend-Gestion-Inventario",
+      "github": "https://github.com/OctavioRamirez10/Backend-Gestion-Inventario"
     },
     {
-      "name": "AdventJS",
+      "name": "FlyReserve",
       "isActive": true,
-      "description": "Retos de programación en JavaScript para cada día de diciembre hasta Navidad",
+      "image": "/images/flyreserve_mockup.png",
+      "description": "Aplicación móvil nativa premium para la reserva de vuelos comerciales con una interfaz inmersiva, realidad aumentada (AR) para medir maletas, pasarela de pago 3D e interactividad avanzada.",
       "highlights": [
-        "+1 millón de visitas",
-        "Multidioma",
-        "JavaScript & TypeScript"
+        "Diseñé una interfaz inmersiva ultra-premium en React Native y Expo utilizando Glassmorphism con bordes traslúcidos y sombras suaves en iOS y Android.",
+        "Implementé una herramienta de medición de maletas en Realidad Aumentada (AR) integrando la cámara del dispositivo con cajas de límites 3D.",
+        "Desarrollé una pasarela de pago interactiva con una tarjeta de crédito 3D que realiza un giro de 180° tridimensional al ingresar al campo CVV.",
+        "Configuré efectos de sonido realistas de despegue de avión y flujos automatizados de notificaciones push programadas localmente."
       ],
-      "url": "https://adventjs.dev"
+      "url": "https://github.com/OctavioRamirez10/FlyReserve",
+      "github": "https://github.com/OctavioRamirez10/FlyReserve"
     },
     {
-      "name": "Codember",
+      "name": "CertiWebs",
       "isActive": true,
-      "description": "Juego interactivo de programación con retos y secretos",
+      "image": "/images/certiwebs_mockup.png",
+      "description": "Plataforma académica para la creación, validación en tiempo real y consulta pública de certificaciones web. Desarrollado como proyecto final integrador para la Universidad Nacional del Litoral (UNL).",
       "highlights": [
-        "+2000 usuarios activos",
-        "Retos para cualquier lenguaje"
+        "Diseñé e implementé el sistema interactivo de autenticación y el panel de administración multinivel para instituciones y usuarios.",
+        "Desarrollé un motor dinámico para la generación de diplomas y certificados en formato PDF listos para descargar e imprimir.",
+        "Modelé la base de datos relacional y el backend del sistema garantizando seguridad en los registros y velocidad de respuesta.",
+        "Establecí flujos de validación en tiempo real para verificar la autenticidad de cada credencial mediante códigos de verificación únicos."
       ],
-      "url": "https://codember.dev"
+      "url": "https://github.com/OctavioRamirez10/CertiWebs-ProyectoFinalUNL",
+      "github": "https://github.com/OctavioRamirez10/CertiWebs-ProyectoFinalUNL"
     },
     {
-      "name": "codi.link",
+      "name": "NutriWeb",
       "isActive": true,
-      "description": "Playground de código HTML, CSS y JavaScript para compartir",
+      "image": "/images/nutriweb_mockup.jpg",
+      "description": "Landing page profesional y premium para nutricionistas, con diseño 100% responsivo y animaciones interactivas sin uso de frameworks.",
       "highlights": [
-        "100k visitas al mes",
-        "Desarrollado por la comunidad"
+        "Diseñé e implementé una interfaz de usuario premium utilizando HTML5 y CSS3 puro, destacando una paleta de colores curada (verde oscuro, coral y mint) y tipografía elegante.",
+        "Desarrollé animaciones avanzadas con Vanilla JavaScript, incluyendo parallax, contadores animados, card tilt 3D y validación de formularios en tiempo real.",
+        "Optimicé la experiencia de usuario (UX) con un diseño mobile-first y navegación scroll-spy inteligente, asegurando adaptabilidad total en todos los dispositivos.",
+        "Construí una arquitectura ligera sin dependencias externas, logrando tiempos de carga óptimos y facilitando el despliegue directo."
       ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "Lista de pruebas técnicas de empresas para practicar programación",
-      "highlights": [
-        "100% gratuito",
-        "+500 soluciones de la comunidad"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Conferencia de programación en streaming para la comunidad hispanohablante con charlas top",
-      "highlights": [
-        "+15k tickets repartidos",
-        "+50k espectadores en directo"
-      ],
-      "url": "https://miduconf.com"
+      "url": "https://github.com/OctavioRamirez10/NutriWeb",
+      "github": "https://github.com/OctavioRamirez10/NutriWeb"
     }
   ]
 }

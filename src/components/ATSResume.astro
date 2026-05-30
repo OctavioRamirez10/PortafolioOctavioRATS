@@ -1,0 +1,33 @@
+---
+import { basics, work, education, projects } from "@cv"
+---
+
+<article class="ats-resume">
+  <h1>{basics.name}</h1>
+  <p>{basics.label}</p>
+  <section>
+    <h2>Contacto</h2>
+    <p>Email: {basics.email}</p>
+    <p>Teléfono: {basics.phone}</p>
+    <p>Ubicación: {basics.location.city}, {basics.location.region}</p>
+  </section>
+  <section>
+    <h2>Experiencia</h2>
+    {work.map(({ name, position, startDate, endDate, summary }) => (
+      <div>
+        <strong>{position} - {name}</strong><br/>
+        <em>{new Date(startDate).toLocaleDateString()} - {endDate ? new Date(endDate).toLocaleDateString() : "Actual"}</em>
+        <p>{summary}</p>
+      </div>
+    ))}
+  </section>
+  <section>
+    <h2>Educación</h2>
+    {education.map(({ institution, area, studyType, startDate, endDate }) => (
+      <div>
+        <strong>{studyType} in {area}</strong> - {institution}<br/>
+        <em>{new Date(startDate).toLocaleDateString()} - {endDate ? new Date(endDate).toLocaleDateString() : "Actual"}</em>
+      </div>
+    ))}
+  </section>
+</article>

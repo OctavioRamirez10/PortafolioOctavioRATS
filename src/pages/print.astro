@@ -1,0 +1,20 @@
+---
+import Layout from "../layouts/Layout.astro";
+import ATSResume from "../components/ATSResume.astro";
+---
+
+<Layout title="CV PDF">
+  <main class="pdf">
+    <ATSResume />
+  </main>
+</Layout>
+
+<style is:global>
+  .pdf {
+    max-width: 210mm; /* A4 width */
+    margin: auto;
+    padding: 20mm;
+    background: var(--color-bg);
+    color: var(--color-text);
+  }
+</style>

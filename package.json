@@ -1,18 +1,22 @@
 {
-  "name": "minimalist-portfolio-json",
+  "name": "portafolio-octavio-rats",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "dev": "astro dev",
+    "copy-images": "node copy-projects-images.js",
+    "dev": "node copy-projects-images.js && astro dev",
+    "copy-avatar": "node copy-avatar.js",
     "start": "astro dev",
     "build": "astro check && astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "pdf": "node scripts/generate-pdf.js"
   },
   "dependencies": {
     "@astrojs/check": "0.4.1",
     "astro": "4.3.2",
     "hotkeypad": "0.1.0",
-    "typescript": "5.3.3"
+    "puppeteer": "^22.0.0",
+    "pdf": "node scripts/generate-pdf.js"
   }
-}
+}

@@ -1,275 +1,236 @@
 {
   "basics": {
-    "name": "Miguel Ángel Durán",
-    "label": "Full-Stack developer with more than 15 years of experience & development content creator",
-    "image": "/me.webp",
-    "email": "miduga@gmail.com",
-    "phone": "+34 688888888",
-    "url": "https://midu.dev",
-    "summary": "+15 years of experience as a web developer. Currently I am a content creator and development dommunicator. I live in Barcelona, Spain. I have worked in different environments: from accelerating the development of start-ups to leading teams in multinational companies.",
+    "name": "Octavio Ramirez",
+    "label": "IT Support Technician & Junior Full Stack Developer",
+    "image": "/me.jpg",
+    "email": "octaarami@gmail.com",
+    "phone": "+54 342 432-4206",
+    "url": "https://github.com/OctavioRamirez10",
+    "summary": "IT Support and Software Development Technician with over 2 years of experience leading Tier-1 and Tier-2 technical support in a high-demand government environment. Highly skilled in reducing system downtime, resolving complex hardware/software issues under high-availability standards, and managing LAN networks and multi-user systems in Windows and Linux (Ubuntu/Debian) environments. Currently pursuing a Software Development degree at ICOP and a Web & Multimedia Informatics degree at UNL. I bridge a solid IT operations foundation with modern full-stack development skills (Node.js, Express, PostgreSQL, REST APIs, Python) to build secure, efficient, and user-friendly digital tools. Proactive, detail-oriented, and open to remote and hybrid positions.",
     "location": {
       "address": "",
-      "postalCode": "08820",
-      "city": "el Prat de Llobregat",
-      "countryCode": "ES",
-      "region": "Spain"
+      "postalCode": "3000",
+      "city": "Santa Fe",
+      "countryCode": "AR",
+      "region": "Santa Fe, Argentina"
     },
     "profiles": [
       {
         "network": "LinkedIn",
-        "username": "midudev",
-        "url": "https://linkedin.com/in/midudev"
-      },
-      {
-        "network": "X",
-        "username": "midudev",
-        "url": "https://x.com/midudev"
+        "username": "octavio-ramirez",
+        "url": "https://linkedin.com/in/octavio-ramirez-425053400"
       },
       {
         "network": "GitHub",
-        "username": "midudev",
-        "url": "https://github.com/midudev"
+        "username": "OctavioRamirez10",
+        "url": "https://github.com/OctavioRamirez10"
       }
     ]
   },
   "work": [
     {
-      "name": "midudev",
-      "position": "Web programming communicator",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2021-01-01",
+      "name": "Casa de Gobierno — Santa Fe",
+      "position": "IT Support Technician — IT Department",
+      "url": "",
+      "startDate": "2023-01-01",
       "endDate": null,
-      "summary": "Most watched development streamer in Spanish on Twitch. +1 million followers across all my social networks. Recognised by Google, Microsoft and GitHub for my impact on the development community.",
+      "summary": "Led comprehensive technical support and local IT infrastructure maintenance for a critical government department, providing Tier-1 and Tier-2 support for 100+ public employees and ensuring maximum system uptime.",
       "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "name": "Adevinta",
-      "position": "Lead Frontend Architect",
-      "url": "https://twitch.tv/midudev",
-      "startDate": "2016-06-01",
-      "endDate": "2022-09-01",
-      "summary": "I led a technical convergence between different products and migrated from a monolithic architecture to a more flexible and optimised one. I fostered best practices and performance culture improvements, as well as rapid delivery of value to users.",
-      "highlights": [
-        "Started the company"
-      ]
-    },
-    {
-      "name": "Hubii",
-      "position": "Senior FrontEnd Developer",
-      "startDate": "2011-03-01",
-      "endDate": "2016-05-01",
-      "summary": "I developed a geolocated news platform and an API to consume the information. Scaled services to support the load of over hundreds of thousands of requests per day. Cut delivery times and deployments to production by half. Collaborated with Mozilla and Telefónica to develop the first FirefoxOS TV app.",
-      "highlights": [
-        "Started the company"
+        "Reduced average incident resolution time (MTTR) by 30% through the standardization of troubleshooting protocols and rigorous ticket management.",
+        "Guaranteed 99%+ system uptime department-wide by installing, configuring, and updating Windows 10/11 environments and customized Linux (Ubuntu/Debian) distributions.",
+        "Diagnosed and resolved 50+ monthly hardware and software incidents (desktops, laptops, networks, and peripherals), applying critical preventive maintenance that cut recurring failures by 25%.",
+        "Designed and implemented the expansion of local LAN networks and structured cabling for 80+ nodes, boosting physical network reliability and decreasing connectivity issues by 40%.",
+        "Administered user credentials, institutional software systems, and network access privileges in strict alignment with internal cybersecurity and compliance guidelines.",
+        "Managed technological hardware asset inventories, optimizing component replacement costs through structured preventive maintenance cycles."
       ]
     }
   ],
-  "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "url": "https://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description…",
-    "highlights": [
-      "Awarded 'Volunteer of the Month'"
-    ]
-  }],
-  "education": [{
-    "institution": "Universitat Oberta de Catalunya",
-    "url": "https://www.uoc.edu/portal/es/index.html",
-    "area": "Software Engineer",
-    "studyType": "Bachelor",
-    "startDate": "2003-01-01",
-    "endDate": "2009-01-01",
-    "score": "4.0",
-    "courses": [
-      "DB1101 - Basic SQL"
-    ]
-  }],
-  "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
-  }],
-  "certificates": [{
-    "name": "Certificate",
-    "date": "2021-11-07",
-    "issuer": "Company",
-    "url": "https://certificate.com"
-  }],
-  "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "url": "https://publication.com",
-    "summary": "Description…"
-  }],
+  "volunteer": [],
+  "education": [
+    {
+      "institution": "Instituto ICOP",
+      "url": "https://icop.edu.ar",
+      "area": "Higher Degree in Software Development",
+      "studyType": "Associate Degree (In Progress)",
+      "startDate": "2023-02-01",
+      "endDate": null,
+      "score": "",
+      "courses": [
+        "Object-Oriented Programming (OOP)",
+        "Data Structures & Algorithms",
+        "Relational Databases & SQL",
+        "Software Engineering Principles"
+      ]
+    },
+    {
+      "institution": "Universidad Nacional del Litoral (UNL)",
+      "url": "https://www.unl.edu.ar",
+      "area": "Degree in Web Applied Informatics & Multimedia Design",
+      "studyType": "University Program (In Progress)",
+      "startDate": "2022-01-01",
+      "endDate": null,
+      "score": "",
+      "courses": [
+        "Responsive Web Design & Advanced CSS3",
+        "Frontend Development with Modern JavaScript",
+        "User Experience & User Interface Design (UX/UI)",
+        "Information Systems & Relational Databases"
+      ]
+    },
+    {
+      "institution": "Escuela San Roque 3015",
+      "url": "",
+      "area": "High School Diploma",
+      "studyType": "High School (Completed)",
+      "startDate": "2015-03-01",
+      "endDate": "2020-12-01",
+      "score": "",
+      "courses": []
+    }
+  ],
+  "awards": [],
+  "certificates": [
+    {
+      "name": "Professional Full Stack Web Development",
+      "date": "2024-01-01",
+      "issuer": "ACADEMIX",
+      "url": ""
+    },
+    {
+      "name": "PC Repair & Hardware Maintenance",
+      "date": "2024-12-01",
+      "issuer": "Instituto ICOP",
+      "url": ""
+    },
+    {
+      "name": "Mobile Device & Smartphone Repair",
+      "date": "2024-02-01",
+      "issuer": "Independent Program",
+      "url": ""
+    },
+    {
+      "name": "Digital Graphic Designer",
+      "date": "2023-12-31",
+      "issuer": "Glowing",
+      "url": ""
+    }
+  ],
+  "publications": [],
   "skills": [
     {
-      "name": "HTML",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend"
-      ]
-    },
-    {
-      "name": "CSS",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Diseño Responsive"
-      ]
-    },
-    {
-      "name": "JavaScript",
-      "level": "Master",
-      "keywords": [
-        "Web development", "Frontend", "Backend", "Fullstack"
-      ]
-    },
-    {
-      "name": "Tailwind",
+      "name": "IT Support & Infrastructure",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Frontend", "CSS Framework", "Diseño Responsive"
+        "Windows 10/11 & Windows Server",
+        "Linux SysAdmin (Ubuntu/Debian)",
+        "TCP/IP Networking & LAN Configuration",
+        "Structured Cabling Setup",
+        "Hardware Troubleshooting & Diagnostics",
+        "Preventive & Corrective Maintenance",
+        "Remote Desktop Tools (RDP, VNC, AnyDesk)",
+        "Active Directory & User Identity Management",
+        "Microsoft Office 365 & LibreOffice Administration",
+        "Ticketing Systems & SLA Management"
       ]
     },
     {
-      "name": "TypeScript",
+      "name": "Software Development",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Frontend", "Backend", "JavaScript Superset"
+        "HTML5 & Semantic Web Structure",
+        "CSS3 & Modern Animations",
+        "Advanced JavaScript ES6+",
+        "Node.js & Express.js for Server-side Applications",
+        "RESTful API Integration & Development",
+        "Relational Databases: PostgreSQL & MySQL",
+        "PHP & Python Programming",
+        "Git & GitHub Flow Version Control",
+        "Responsive Web Design (Mobile First)",
+        "UX/UI Design & Accessibility (a11y)",
+        "Agile & Scrum Methodologies",
+        "Software Development Life Cycle (SDLC)"
       ]
     },
     {
-      "name": "Node",
+      "name": "Design & Multimedia",
       "level": "Advanced",
       "keywords": [
-        "Web development", "Backend", "JavaScript", "Servidor"
-      ]
-    },
-    {
-      "name": "MySQL",
-      "level": "Advanced",
-      "keywords": [
-        "Bases de Datos", "SQL", "Database", "Backend"
-      ]
-    },
-    {
-      "name": "Git",
-      "level": "Advanced",
-      "keywords": [
-        "Version control", "Colaboración", "Source code"
-      ]
-    },
-    {
-      "name": "GitHub",
-      "level": "Advanced",
-      "keywords": [
-        "Version control", "Collaboration", "Source code", "Git"
-      ]
-    },
-    {
-      "name": "Next.js",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "React Framework", "SSR", "Static Generation"
-      ]
-    },
-    {
-      "name": "React",
-      "level": "Advanced",
-      "keywords": [
-        "Web development", "Frontend", "JavaScript Library", "UI"
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Adobe After Effects",
+        "Brand Assets & Graphic Design",
+        "Multimedia Content Creation"
       ]
     }
   ],
   "languages": [
     {
       "language": "Spanish",
-      "fluency": "Native speaker"
+      "fluency": "Native"
     },
     {
       "language": "English",
-      "fluency": "Advanced"
+      "fluency": "Intermediate"
     }
   ],
-  "interests": [{
-    "name": "Wildlife",
-    "keywords": [
-      "Ferrets",
-      "Unicorns"
-    ]
-  }],
-  "references": [{
-    "name": "Jane Doe",
-    "reference": "Reference…"
-  }],
+  "interests": [],
+  "references": [],
   "projects": [
     {
-      "name": "mars.codes",
+      "name": "Inventory Management System",
       "isActive": true,
-      "description": "Interactive story with programming challenges to travel to Mars",
+      "image": "/images/inventory_mockup.png",
+      "description": "Premium full-stack web application designed to automate and control real-time stock levels. Integrates product flows (inflow/outflow), supplier tracking, and auto-restocking alerts.",
       "highlights": [
-        "Choose your own adventure",
-        "In progress"
+        "Built a high-performance RESTful API using Node.js and Express.js, featuring secure endpoints and validation middleware for key CRUD actions.",
+        "Modelled and optimized PostgreSQL relational schemas with robust referential integrity constraints, securing transaction safety across all product stock entries.",
+        "Designed an elegant, mobile-friendly interactive frontend with HTML5, CSS3, and DOM manipulation via vanilla JavaScript.",
+        "Implemented structured Git Workflows (branch-per-feature, code reviews, semantic commit messages) in alignment with agile product practices."
       ],
-      "url": "https://mars.codes"
+      "url": "https://github.com/OctavioRamirez10/Backend-Gestion-Inventario",
+      "github": "https://github.com/OctavioRamirez10/Backend-Gestion-Inventario"
     },
     {
-      "name": "AdventJS",
+      "name": "FlyReserve",
       "isActive": true,
-      "description": "JavaScript programming challenges for every day of December until Christmas",
+      "image": "/images/flyreserve_mockup.png",
+      "description": "Premium native mobile application for commercial flight bookings, featuring an immersive UI, augmented reality (AR) for luggage sizing, and a 3D payment gateway.",
       "highlights": [
-        "+1 million visits",
-        "Multilanguage",
-        "JavaScript & TypeScript"
+        "Designed an immersive, glassmorphic UI using React Native and Expo, featuring translucent card overlays and soft shadows for iOS and Android.",
+        "Built an Augmented Reality (AR) suitcase measurement tool integrating the device camera with 3D bounding boxes.",
+        "Developed an interactive checkout system with a custom 3D credit card that rotates 180 degrees dynamically based on form input.",
+        "Integrated realistic airplane takeoff audio triggers and local automated push notification queues using Expo libraries."
       ],
-      "url": "https://advent.js/dev"
+      "url": "https://github.com/OctavioRamirez10/FlyReserve",
+      "github": "https://github.com/OctavioRamirez10/FlyReserve"
     },
     {
-      "name": "Codember",
+      "name": "CertiWebs",
       "isActive": true,
-      "description": "Interactive programming game with challenges and secrets",
+      "image": "/images/certiwebs_mockup.png",
+      "description": "Academic web application for the creation, real-time validation, and public query of web development certifications. Built as an integrative final project for UNL.",
       "highlights": [
-        "+2000 active users",
-        "Challenges for any language"
+        "Designed and implemented the user authentication and multi-tier administration dashboard for institutions and students.",
+        "Developed a dynamic server-side document engine to generate downloadable and print-ready PDF diplomas and credentials.",
+        "Modelled the relational database and engineered scalable backend endpoints to ensure high transaction speeds.",
+        "Established secure public validation flows to verify certification authenticity via unique cryptographic reference keys."
       ],
-      "url": "https://codember.dev"
+      "url": "https://github.com/OctavioRamirez10/CertiWebs-ProyectoFinalUNL",
+      "github": "https://github.com/OctavioRamirez10/CertiWebs-ProyectoFinalUNL"
     },
     {
-      "name": "codi.link",
+      "name": "NutriWeb",
       "isActive": true,
-      "description": "Playground of HTML, CSS and JavaScript code for sharing",
+      "image": "/images/nutriweb_mockup.jpg",
+      "description": "Professional and premium landing page for a nutritionist, featuring a fully responsive layout and interactive animations without relying on external frameworks.",
       "highlights": [
-        "100k monthly visit",
-        "Developed by the community"
+        "Designed and implemented a premium user interface using pure HTML5 and CSS3, featuring a curated color palette (dark green, coral, and mint) and elegant typography.",
+        "Developed advanced interactive animations using Vanilla JavaScript, including parallax effects, animated counters, 3D card tilts, and real-time form validation.",
+        "Optimized User Experience (UX) with a mobile-first approach and intelligent scroll-spy navigation, ensuring seamless adaptability across all devices.",
+        "Engineered a lightweight, dependency-free architecture that achieves optimal load times and simplifies project deployment."
       ],
-      "url": "https://codi.link",
-      "github": "https://github.com/midudev/codi.link"
-    },
-    {
-      "name": "Pruebas Técnicas",
-      "isActive": true,
-      "description": "List of technical tests of companies to practice programming",
-      "highlights": [
-        "100% free",
-        "+500 community solutions"
-      ],
-      "url": "https://pruebastecnicas.com",
-      "github": "https://github.com/midudev/pruebas-tecnicas"
-    },
-    {
-      "name": "miduConf",
-      "description": "Streaming programming conference for the Spanish-speaking community with top talks",
-      "highlights": [
-        "+15k tickets handed over",
-        "+50k live viewers"
-      ],
-      "url": "https://miduconf.com"
+      "url": "https://github.com/OctavioRamirez10/NutriWeb",
+      "github": "https://github.com/OctavioRamirez10/NutriWeb"
     }
   ]
 }
