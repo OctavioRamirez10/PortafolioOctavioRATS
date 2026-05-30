@@ -16,7 +16,6 @@
     "@astrojs/check": "0.4.1",
     "astro": "4.3.2",
     "hotkeypad": "0.1.0",
-    "puppeteer": "^22.0.0",
-    "pdf": "node scripts/generate-pdf.js"
+    "puppeteer": "^22.0.0"
   }
 }
