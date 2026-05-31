@@ -62,15 +62,11 @@ Basado en el diseño de <a href="https://github.com/BartoszJarocki/cv">Bartosz J
 ### 1. Usa este [repo](https://github.com/midudev/minimalist-portfolio-json) como _template_ de un proyecto de Astro
 
 
-- Yo uso [pnpm](https://pnpm.io/installation) como gestor de dependencias y empaquetador.
+- Yo uso [npm](https://www.npmjs.com/) como gestor de dependencias y empaquetador.
 
 ```bash
-# Activa pnpm en MacOS, WSL & Linux:
-corepack enable
-corepack prepare pnpm@latest --activate
-
-# Inicializa el proyecto
-pnpm create astro@latest -- --template midudev/minimalist-portfolio-json
+# Instala las dependencias del proyecto
+npm install
 ```
 
 ### 2. Añade tu contenido:
@@ -79,7 +75,7 @@ Edita el archivo `cv.json` para crear tu propio Portafolio/CV imprimible.
 
 ```bash
 # Disfruta del resultado
-pnpm dev
+npm run dev
 ```
 
 

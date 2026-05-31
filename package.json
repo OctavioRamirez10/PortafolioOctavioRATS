@@ -13,9 +13,12 @@
     "pdf": "node scripts/generate-pdf.js"
   },
   "dependencies": {
-    "@astrojs/check": "0.4.1",
     "astro": "4.3.2",
-    "hotkeypad": "0.1.0",
-    "puppeteer": "^22.0.0"
+    "hotkeypad": "0.1.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.4.1",
+    "puppeteer": "^22.0.0",
+    "typescript": "^5.3.3"
   }
 }
