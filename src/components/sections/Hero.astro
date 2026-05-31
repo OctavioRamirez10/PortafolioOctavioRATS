@@ -12,6 +12,9 @@ import type { SocialIcon } from "@/types"
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, region } = location
 
+const cleanImage = image.startsWith('/') ? image.slice(1) : image;
+const imageUrl = `${import.meta.env.BASE_URL}${cleanImage}`;
+
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
   LinkedIn,
@@ -80,7 +83,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       </footer>
     </div>
     <figure>
-      <img src={image} alt={name} />
+      <img src={imageUrl} alt={name} />
     </figure>
   </div>
 </Section>
