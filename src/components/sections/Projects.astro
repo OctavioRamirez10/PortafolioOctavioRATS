@@ -1,36 +1,8 @@
 ---
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
-import fs from "fs"
-import path from "path"
 
 import { projects } from "@cv"
-
-// Copy mockup images automatically during Astro server/build execution
-const sourceDir = "C:\\Users\\Octavio\\.gemini\\antigravity\\brain\\d33ad23a-b851-42b6-adce-aba15139e0e7"
-const targetDir = path.join(process.cwd(), "public", "images")
-
-const imagesToCopy = [
-  { src: "inventory_mockup_1780018266347.png", dest: "inventory_mockup.png" },
-  { src: "flyreserve_mockup_1780018686521.png", dest: "flyreserve_mockup.png" },
-  { src: "certiwebs_mockup_1780018759480.png", dest: "certiwebs_mockup.png" }
-]
-
-try {
-  if (!fs.existsSync(targetDir)) {
-    fs.mkdirSync(targetDir, { recursive: true })
-  }
-  
-  imagesToCopy.forEach((img) => {
-    const srcPath = path.join(sourceDir, img.src)
-    const destPath = path.join(targetDir, img.dest)
-    if (fs.existsSync(srcPath)) {
-      fs.copyFileSync(srcPath, destPath)
-    }
-  })
-} catch (e) {
-  console.error("Error auto-copying mockup images in Projects.astro frontmatter:", e)
-}
 ---
 
 <Section title="Proyectos">
