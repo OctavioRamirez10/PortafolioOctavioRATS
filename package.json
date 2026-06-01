@@ -3,11 +3,10 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "copy-images": "node copy-projects-images.js",
-    "dev": "node copy-projects-images.js && astro dev",
-    "copy-avatar": "node copy-avatar.js",
+    "prepare-assets": "node scripts/prepare-assets.js",
+    "dev": "node scripts/prepare-assets.js && astro dev",
     "start": "astro dev",
-    "build": "astro check && astro build",
+    "build": "node scripts/prepare-assets.js && astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "pdf": "node scripts/generate-pdf.js"
