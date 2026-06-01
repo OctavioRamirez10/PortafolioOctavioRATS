@@ -9,20 +9,11 @@ import GitHub from "@/icons/GitHub.astro"
 import WorldMap from "@/icons/WorldMap.astro"
 import type { SocialIcon } from "@/types"
 
-import { Image } from "astro:assets"
-
 const { name, label, image, location, profiles, phone, email } = basics
 const { city, region } = location
 
-// Load avatar image dynamically from src/assets to optimize and handle base paths
-const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/**/*.{jpeg,jpg,png,gif,webp}');
-const cleanPath = image.startsWith('/') ? image : `/${image}`;
-const assetPath = `/src/assets${cleanPath}`;
-let resolvedAvatar = null;
-if (images[assetPath]) {
-  const mod = await images[assetPath]();
-  resolvedAvatar = mod.default;
-}
+const cleanImage = image.startsWith('/') ? image.slice(1) : image;
+const imageUrl = `${import.meta.env.BASE_URL}${cleanImage}`;
 
 const SOCIAL_ICONS: SocialIcon = {
   GitHub,
@@ -92,11 +83,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
       </footer>
     </div>
     <figure>
-      {resolvedAvatar ? (
-        <Image src={resolvedAvatar} alt={name} width={128} height={128} />
-      ) : (
-        <img src={image} alt={name} />
-      )}
+      <img src={imageUrl} alt={name} />
     </figure>
   </div>
 </Section>

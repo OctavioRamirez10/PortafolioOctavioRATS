@@ -3,10 +3,9 @@
   "type": "module",
   "version": "0.0.1",
   "scripts": {
-    "prepare-assets": "node scripts/prepare-assets.js",
-    "dev": "node scripts/prepare-assets.js && astro dev",
+    "dev": "astro dev",
     "start": "astro dev",
-    "build": "node scripts/prepare-assets.js && astro check && astro build",
+    "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
     "pdf": "node scripts/generate-pdf.js"
@@ -20,4 +19,4 @@
     "puppeteer": "^22.0.0",
     "typescript": "^5.3.3"
   }
-}
+}
