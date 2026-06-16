@@ -1,0 +1,21 @@
+INSTRUCCIONES: Integrar contenido ATS en plantilla Word
+
+Archivos generados en esta carpeta:
+- CV_Octavio_Ramirez_ATS.txt  (versión texto plano optimizada ATS)
+- CV_Octavio_Ramirez_ATS.md   (versión Markdown para copiar/pegar)
+
+Pasos para integrar en `plantilla_dark_mode.docx`:
+1. Abre `plantilla_dark_mode.docx` con Microsoft Word.
+2. Localiza secciones de la plantilla para: Nombre y título, Contacto, Perfil, Experiencia, Proyectos, Educación, Certificados, Habilidades e Idiomas.
+3. Copia el contenido desde `CV_Octavio_Ramirez_ATS.md` o `.txt` y pégalo en las secciones correspondientes. Usa 'Pegar como texto sin formato' para evitar estilos conflictivos.
+4. Inserta la foto de perfil: optimiza la imagen a 300–400 px de lado y recorta en círculo si la plantilla lo requiere.
+5. Revisa que los hechos clave (fechas, URLs) se muestren como texto (no imágenes) para mantener compatibilidad con ATS.
+6. Guarda como `CV_Octavio_Ramirez_ATS.docx` y exporta también a PDF para envíos.
+
+Notas ATS importantes:
+- Mantener texto claro y legible, evitar tablas complejas y cajas de texto para secciones críticas (experiencia, educación, skills).
+- Mantener palabras clave exactas (Node.js, Express, React, PostgreSQL, REST API, SQL, Git).
+- Mantener fechas con formato YYYY o MMM YYYY para claridad.
+- Evitar encabezados gráficos y pies de página que incluyan información crítica (ATS puede ignorarlos).
+
+Si quieres, puedo intentar integrar automáticamente la plantilla y añadir la foto si subes `plantilla_dark_mode.docx` y la imagen aquí (o confirmas que están ya en `CVor`).

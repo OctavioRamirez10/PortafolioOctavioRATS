@@ -13,26 +13,26 @@
       "city": "Santa Fe",
       "countryCode": "AR",
       "region": "Santa Fe, Argentina"
-    },
-    "profiles": [
-      {
-        "network": "LinkedIn",
-        "username": "octavio-ramirez",
-        "url": "https://linkedin.com/in/octavio-ramirez-425053400"
-      },
+    {
+      "institution": "Instituto ICOP",
+      "url": "https://icop.edu.ar",
+      "area": "Tecnicatura Superior en Desarrollo de Software",
+      "studyType": "Higher Technical Degree",
+      "startDate": "2023-02-01",
+      "endDate": "2026-12-31",
       {
         "network": "GitHub",
         "username": "OctavioRamirez10",
         "url": "https://github.com/OctavioRamirez10"
       }
     ]
-  },
-  "work": [
     {
-      "name": "Casa de Gobierno — Santa Fe",
-      "position": "IT Support Technician — IT Department",
-      "url": "",
-      "startDate": "2023-01-01",
+      "institution": "Universidad Nacional del Litoral (UNL)",
+      "url": "https://www.unl.edu.ar",
+      "area": "Tecnicatura en Informática Aplicada a Sitios Web y Diseño Multimedial",
+      "studyType": "University Degree",
+      "startDate": "2024-01-01",
+      "endDate": "2026-12-31",
       "endDate": null,
       "summary": "Led comprehensive technical support and local IT infrastructure maintenance for a critical government department, providing Tier-1 and Tier-2 support for 100+ public employees and ensuring maximum system uptime.",
       "highlights": [
@@ -179,7 +179,7 @@
     {
       "name": "Inventory Management System",
       "isActive": true,
-      "image": "/images/inventory_mockup.png",
+      "image": "images/inventory_mockup.png",
       "description": "Premium full-stack web application designed to automate and control real-time stock levels. Integrates product flows (inflow/outflow), supplier tracking, and auto-restocking alerts.",
       "highlights": [
         "Built a high-performance RESTful API using Node.js and Express.js, featuring secure endpoints and validation middleware for key CRUD actions.",
@@ -193,7 +193,7 @@
     {
       "name": "FlyReserve",
       "isActive": true,
-      "image": "/images/flyreserve_mockup.png",
+      "image": "images/flyreserve_mockup.png",
       "description": "Premium native mobile application for commercial flight bookings, featuring an immersive UI, augmented reality (AR) for luggage sizing, and a 3D payment gateway.",
       "highlights": [
         "Designed an immersive, glassmorphic UI using React Native and Expo, featuring translucent card overlays and soft shadows for iOS and Android.",
@@ -207,7 +207,7 @@
     {
       "name": "CertiWebs",
       "isActive": true,
-      "image": "/images/certiwebs_mockup.png",
+      "image": "images/certiwebs_mockup.png",
       "description": "Academic web application for the creation, real-time validation, and public query of web development certifications. Built as an integrative final project for UNL.",
       "highlights": [
         "Designed and implemented the user authentication and multi-tier administration dashboard for institutions and students.",
@@ -221,7 +221,7 @@
     {
       "name": "NutriWeb",
       "isActive": true,
-      "image": "/images/nutriweb_mockup.jpg",
+      "image": "images/nutriweb_mockup.jpg",
       "description": "Professional and premium landing page for a nutritionist, featuring a fully responsive layout and interactive animations without relying on external frameworks.",
       "highlights": [
         "Designed and implemented a premium user interface using pure HTML5 and CSS3, featuring a curated color palette (dark green, coral, and mint) and elegant typography.",

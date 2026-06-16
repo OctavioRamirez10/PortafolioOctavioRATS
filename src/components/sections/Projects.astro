@@ -11,7 +11,9 @@ import { projects } from "@cv"
       projects.map(
         ({ url, description, highlights, name, isActive, github, image }) => {
           const cleanImage = image ? (image.startsWith('/') ? image.slice(1) : image) : '';
-          const imageUrl = image ? `${import.meta.env.BASE_URL}${cleanImage}` : '';
+          const base = import.meta.env.BASE_URL || '/';
+          const normalizedBase = base.endsWith('/') ? base : `${base}/`;
+          const imageUrl = image ? `${normalizedBase}${cleanImage}` : '';
           return (
             <li>
               <article>

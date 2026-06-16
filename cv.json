@@ -51,9 +51,9 @@
       "institution": "Instituto ICOP",
       "url": "https://icop.edu.ar",
       "area": "Tecnicatura Superior en Desarrollo de Software",
-      "studyType": "Carrera Superior Terciaria (En Curso)",
+      "studyType": "Carrera Superior Terciaria",
       "startDate": "2023-02-01",
-      "endDate": null,
+      "endDate": "2026-12-31",
       "score": "",
       "courses": [
         "Desarrollo de Software Orientado a Objetos",
@@ -66,9 +66,9 @@
       "institution": "Universidad Nacional del Litoral (UNL)",
       "url": "https://www.unl.edu.ar",
       "area": "Tecnicatura en Informática Aplicada a Sitios Web y Diseño Multimedial",
-      "studyType": "Carrera Universitaria (En Curso)",
-      "startDate": "2022-01-01",
-      "endDate": null,
+      "studyType": "Carrera Universitaria",
+      "startDate": "2024-01-01",
+      "endDate": "2026-12-31",
       "score": "",
       "courses": [
         "Desarrollo Web Responsive y Estilos CSS3 Avanzados",
@@ -179,7 +179,7 @@
     {
       "name": "Sistema de Gestión de Inventario",
       "isActive": true,
-      "image": "/images/inventory_mockup.png",
+      "image": "images/inventory_mockup.png",
       "description": "Plataforma web full stack premium diseñada para automatizar y controlar el stock en tiempo real. Permite gestionar entradas/salidas de productos, catálogo de proveedores y auditorías de inventario.",
       "highlights": [
         "Desarrollé una API REST de alto rendimiento en Node.js y Express.js, implementando endpoints seguros para todas las operaciones CRUD fundamentales.",
@@ -193,7 +193,7 @@
     {
       "name": "FlyReserve",
       "isActive": true,
-      "image": "/images/flyreserve_mockup.png",
+      "image": "images/flyreserve_mockup.png",
       "description": "Aplicación móvil nativa premium para la reserva de vuelos comerciales con una interfaz inmersiva, realidad aumentada (AR) para medir maletas, pasarela de pago 3D e interactividad avanzada.",
       "highlights": [
         "Diseñé una interfaz inmersiva ultra-premium en React Native y Expo utilizando Glassmorphism con bordes traslúcidos y sombras suaves en iOS y Android.",
@@ -207,7 +207,7 @@
     {
       "name": "CertiWebs",
       "isActive": true,
-      "image": "/images/certiwebs_mockup.png",
+      "image": "images/certiwebs_mockup.png",
       "description": "Plataforma académica para la creación, validación en tiempo real y consulta pública de certificaciones web. Desarrollado como proyecto final integrador para la Universidad Nacional del Litoral (UNL).",
       "highlights": [
         "Diseñé e implementé el sistema interactivo de autenticación y el panel de administración multinivel para instituciones y usuarios.",
@@ -221,7 +221,7 @@
     {
       "name": "NutriWeb",
       "isActive": true,
-      "image": "/images/nutriweb_mockup.jpg",
+      "image": "images/nutriweb_mockup.jpg",
       "description": "Landing page profesional y premium para nutricionistas, con diseño 100% responsivo y animaciones interactivas sin uso de frameworks.",
       "highlights": [
         "Diseñé e implementé una interfaz de usuario premium utilizando HTML5 y CSS3 puro, destacando una paleta de colores curada (verde oscuro, coral y mint) y tipografía elegante.",
