@@ -26,3 +26,19 @@ body {
 section {
   background: var(--color-section-bg);
 }
+
+/* Project image improvements */
+.image-wrapper {
+  background: linear-gradient(180deg, #f8fafc, #eef2f7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image-wrapper.no-img {
+  background: linear-gradient(180deg, #f1f5f9, #e2e8f0);
+}
+.image-wrapper img { 
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}

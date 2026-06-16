@@ -14,12 +14,13 @@ import { projects } from "@cv"
           const base = import.meta.env.BASE_URL || '/';
           const normalizedBase = base.endsWith('/') ? base : `${base}/`;
           const imageUrl = image ? `${normalizedBase}${cleanImage}` : '';
+          const placeholder = `${normalizedBase}images/placeholder.svg`;
           return (
             <li>
               <article>
                 {image && (
                   <div class="image-wrapper">
-                    <img src={imageUrl} alt={`Visualización de ${name}`} loading="lazy" />
+                    <img src={imageUrl} alt={`Visualización de ${name}`} loading="lazy" onerror={`this.onerror=null;this.src='${placeholder}'`} />
                   </div>
                 )}
                 <div class="project-info">
