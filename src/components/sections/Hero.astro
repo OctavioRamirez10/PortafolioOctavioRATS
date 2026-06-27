@@ -1,5 +1,5 @@
 ---
-import { basics } from "@cv"
+import { getCV, getTranslations } from "@/cv-loader"
 import Section from "@/components/Section.astro"
 import Mail from "@/icons/Mail.astro"
 import Phone from "@/icons/Phone.astro"
@@ -9,7 +9,9 @@ import GitHub from "@/icons/GitHub.astro"
 import WorldMap from "@/icons/WorldMap.astro"
 import type { SocialIcon } from "@/types"
 
-const { name, label, image, location, profiles, phone, email } = basics
+const cv = getCV(Astro.url.pathname)
+const t = getTranslations(Astro.url.pathname)
+const { name, label, image, location, profiles, phone, email } = cv.basics
 const { city, region } = location
 
 const cleanImage = image.startsWith('/') ? image.slice(1) : image;
@@ -47,7 +49,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
           email && (
             <a
               href={`mailto:${email}`}
-              title={`Enviar un correo electrónico a ${name} al correo ${email}`}
+              title={`${t.visitLinkedIn.includes("perfil") ? "Enviar un correo electrónico a" : "Send an email to"} ${name} ${t.visitLinkedIn.includes("perfil") ? "al correo" : "at"} ${email}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -59,7 +61,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
           phone && (
             <a
               href={`tel:${phone}`}
-              title={`Llamar por teléfono a ${name} al número ${phone}`}
+              title={`${t.visitLinkedIn.includes("perfil") ? "Llamar por teléfono a" : "Call"} ${name} ${t.visitLinkedIn.includes("perfil") ? "al número" : "at"} ${phone}`}
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -74,7 +76,7 @@ const printInfo = [email, phone, linkedUrl].filter(Boolean).join(" • ")
             return (
               <a
                 href={url}
-                title={`Visitar el perfil de ${name} en ${network}`}
+                title={`${t.visitLinkedIn} ${name} ${t.visitLinkedIn.includes("perfil") ? "en" : "on"} ${network}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >

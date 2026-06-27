@@ -13,26 +13,26 @@
       "city": "Santa Fe",
       "countryCode": "AR",
       "region": "Santa Fe, Argentina"
-    {
-      "institution": "Instituto ICOP",
-      "url": "https://icop.edu.ar",
-      "area": "Tecnicatura Superior en Desarrollo de Software",
-      "studyType": "Higher Technical Degree",
-      "startDate": "2023-02-01",
-      "endDate": "2026-12-31",
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "octavio-ramirez",
+        "url": "https://linkedin.com/in/octavio-ramirez-425053400"
+      },
       {
         "network": "GitHub",
         "username": "OctavioRamirez10",
         "url": "https://github.com/OctavioRamirez10"
       }
     ]
+  },
+  "work": [
     {
-      "institution": "Universidad Nacional del Litoral (UNL)",
-      "url": "https://www.unl.edu.ar",
-      "area": "Tecnicatura en Informática Aplicada a Sitios Web y Diseño Multimedial",
-      "studyType": "University Degree",
-      "startDate": "2024-01-01",
-      "endDate": "2026-12-31",
+      "name": "Casa de Gobierno — Santa Fe",
+      "position": "IT Support Technician — IT Area",
+      "url": "",
+      "startDate": "2023-01-01",
       "endDate": null,
       "summary": "Led comprehensive technical support and local IT infrastructure maintenance for a critical government department, providing Tier-1 and Tier-2 support for 100+ public employees and ensuring maximum system uptime.",
       "highlights": [

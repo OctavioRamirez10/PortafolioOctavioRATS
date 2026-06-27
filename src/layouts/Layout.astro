@@ -1,14 +1,17 @@
 ---
-import { basics } from "@cv";
+import { getCV, getTranslations } from "@/cv-loader";
+import LanguageToggle from "../components/LanguageToggle.astro";
 import "../styles/theme.css";
 
 interface Props {
   title: string
 }
 
+const cv = getCV(Astro.url.pathname)
+const t = getTranslations(Astro.url.pathname)
 const { title } = Astro.props
 
-const { image, summary, url } = basics
+const { image, summary, url } = cv.basics
 const cleanImage = image.startsWith('/') ? image.slice(1) : image;
 const imageUrl = `${import.meta.env.BASE_URL}${cleanImage}`;
 const faviconUrl = `${import.meta.env.BASE_URL}favicon.svg`;
@@ -38,6 +41,7 @@ const faviconUrl = `${import.meta.env.BASE_URL}favicon.svg`;
     <meta name="twitter:image" content="" />
   </head>
   <body>
+    <LanguageToggle />
     <div class="page-wrapper">
       <slot />
     </div>

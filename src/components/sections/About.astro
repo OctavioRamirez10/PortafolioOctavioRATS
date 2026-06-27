@@ -1,11 +1,13 @@
 ---
 import Section from "../Section.astro"
+import { getCV, getTranslations } from "@/cv-loader"
 
-import { basics } from "@cv"
-const { summary } = basics
+const cv = getCV(Astro.url.pathname)
+const t = getTranslations(Astro.url.pathname)
+const { summary } = cv.basics
 ---
 
-<Section title="Sobre mí">
+<Section title={t.about}>
   <p>
     {summary}
   </p>

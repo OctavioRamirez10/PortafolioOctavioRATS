@@ -1,17 +1,20 @@
 ---
 import Section from "../Section.astro"
+import { getCV, getTranslations } from "@/cv-loader"
 
-import { work } from "@cv"
+const cv = getCV(Astro.url.pathname)
+const t = getTranslations(Astro.url.pathname)
+const { work } = cv
 ---
 
-<Section title="Experiencia laboral">
+<Section title={t.experience}>
   <ul>
     {
       work.map(
         ({ name, startDate, endDate, position, summary, highlights, url }) => {
           const startYear = new Date(startDate).getFullYear()
           const endYear =
-            endDate != null ? new Date(endDate).getFullYear() : "Actual"
+            endDate != null ? new Date(endDate).getFullYear() : t.present
 
           return (
             <li>
@@ -19,7 +22,7 @@ import { work } from "@cv"
                 <header>
                   <div>
                     <h3>
-                      <a href={url} title={`Ver ${name}`} target="_blank">
+                      <a href={url} title={`${t.visitProject} ${name}`} target="_blank">
                         {name}
                       </a>
                     </h3>

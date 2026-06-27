@@ -1,0 +1,73 @@
+---
+import { getTranslations } from "../cv-loader"
+const t = getTranslations(Astro.url.pathname)
+---
+
+<a href={t.languageUrl} class="lang-toggle-btn no-print" aria-label="Change language / Cambiar idioma">
+  <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <circle cx="12" cy="12" r="10"></circle>
+    <line x1="2" y1="12" x2="22" y2="12"></line>
+    <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+  </svg>
+  <span>{t.languageButton}</span>
+</a>
+
+<style>
+  .lang-toggle-btn {
+    position: fixed;
+    top: 24px;
+    right: 24px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid #e2e8f0;
+    border-radius: 9999px;
+    color: #475569;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1000;
+  }
+
+  .lang-toggle-btn:hover {
+    background: #ffffff;
+    color: #0f172a;
+    border-color: #cbd5e1;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+
+  .lang-toggle-btn:active {
+    transform: translateY(0);
+  }
+
+  .lang-toggle-btn svg {
+    color: #64748b;
+    transition: transform 0.3s ease;
+  }
+
+  .lang-toggle-btn:hover svg {
+    transform: rotate(15deg);
+    color: #3b82f6;
+  }
+
+  @media (max-width: 700px) {
+    .lang-toggle-btn {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+    }
+  }
+
+  @media print {
+    .lang-toggle-btn {
+      display: none !important;
+    }
+  }
+</style>

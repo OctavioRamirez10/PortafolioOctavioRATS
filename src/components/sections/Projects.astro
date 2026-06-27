@@ -1,11 +1,14 @@
 ---
 import GitHub from "@/icons/GitHub.astro"
 import Section from "../Section.astro"
+import { getCV, getTranslations } from "@/cv-loader"
 
-import { projects } from "@cv"
+const cv = getCV(Astro.url.pathname)
+const t = getTranslations(Astro.url.pathname)
+const { projects } = cv
 ---
 
-<Section title="Proyectos">
+<Section title={t.projects}>
   <ul>
     {
       projects.map(
@@ -20,13 +23,13 @@ import { projects } from "@cv"
               <article>
                 {image && (
                   <div class="image-wrapper">
-                    <img src={imageUrl} alt={`Visualización de ${name}`} loading="lazy" onerror={`this.onerror=null;this.src='${placeholder}'`} />
+                    <img src={imageUrl} alt={`${t.projectAlt} ${name}`} loading="lazy" onerror={`this.onerror=null;this.src='${placeholder}'`} />
                   </div>
                 )}
                 <div class="project-info">
                   <header>
                     <h3>
-                      <a href={url} target="_blank" title={`Ver el proyecto ${name}`}>
+                      <a href={url} target="_blank" title={`${t.visitProject} ${name}`}>
                         {name}
                       </a>
                       {isActive && <span class="active-dot">•</span>}
@@ -35,7 +38,7 @@ import { projects } from "@cv"
                           class="github-code-link"
                           href={github}
                           target="_blank"
-                          title={`Ver código fuente del proyecto ${name}`}
+                          title={`${t.visitGitHub} ${name}`}
                         >
                           <GitHub />
                         </a>

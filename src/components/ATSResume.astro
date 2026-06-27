@@ -1,32 +1,35 @@
 ---
-import { basics, work, education, projects } from "@cv"
+import { getCV, getTranslations } from "@/cv-loader"
+const cv = getCV(Astro.url.pathname)
+const t = getTranslations(Astro.url.pathname)
+const { basics, work, education } = cv
 ---
 
 <article class="ats-resume">
   <h1>{basics.name}</h1>
   <p>{basics.label}</p>
   <section>
-    <h2>Contacto</h2>
+    <h2>{t.languageButton === "English" ? "Contacto" : "Contact"}</h2>
     <p>Email: {basics.email}</p>
-    <p>Teléfono: {basics.phone}</p>
-    <p>Ubicación: {basics.location.city}, {basics.location.region}</p>
+    <p>{t.languageButton === "English" ? "Teléfono" : "Phone"}: {basics.phone}</p>
+    <p>{t.languageButton === "English" ? "Ubicación" : "Location"}: {basics.location.city}, {basics.location.region}</p>
   </section>
   <section>
-    <h2>Experiencia</h2>
+    <h2>{t.experience}</h2>
     {work.map(({ name, position, startDate, endDate, summary }) => (
       <div>
         <strong>{position} - {name}</strong><br/>
-        <em>{new Date(startDate).toLocaleDateString()} - {endDate ? new Date(endDate).toLocaleDateString() : "Actual"}</em>
+        <em>{new Date(startDate).toLocaleDateString()} - {endDate ? new Date(endDate).toLocaleDateString() : t.present}</em>
         <p>{summary}</p>
       </div>
     ))}
   </section>
   <section>
-    <h2>Educación</h2>
+    <h2>{t.education}</h2>
     {education.map(({ institution, area, studyType, startDate, endDate }) => (
       <div>
         <strong>{studyType} in {area}</strong> - {institution}<br/>
-        <em>{new Date(startDate).toLocaleDateString()} - {endDate ? new Date(endDate).toLocaleDateString() : "Actual"}</em>
+        <em>{new Date(startDate).toLocaleDateString()} - {endDate ? new Date(endDate).toLocaleDateString() : t.present}</em>
       </div>
     ))}
   </section>
